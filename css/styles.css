@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 600;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: block;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid hsl(0, 0%, 20%);
+  transition: border 0.2s ease-in-out;
+}
+
+a:hover {
+  border: 3px solid hsl(188, 100%, 90%);
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInAndUp 0.5s ease-in-out forwards;
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 14px;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  width: 30%;
+  margin-bottom: 18px;
+}
+
+#location {
+  color: hsl(188, 100%, 90%);
+  font-weight: 600;
+}
+
+@media (min-width: 400px) {
+  body {
+    height: 100vh;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    margin-top: 10%;
+    height: 100%;
+  }
+  body {
+    overflow: auto;
+  }
+}
+@media (orientation: landscape) and (max-width: 1000px) {
+  body {
+    overflow: auto;
+  }
+  a {
+    margin: 0;
+  }
+  .card {
+    width: 500px;
+    display: flex;
+  }
+  .link-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@keyframes fadeInAndUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

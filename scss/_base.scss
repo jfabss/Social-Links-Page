@@ -1,0 +1,46 @@
+// partial for base styles and resets such as global variables
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $OffBlack;
+    color: $White;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    color: $White;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: $Grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid $Grey;
+    transition: border 0.2s ease-in-out;
+}
+
+a:hover {
+    border: 3px solid $LightBlue;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
